@@ -72,12 +72,12 @@
     },
   };
 
-  /**
-   * Method の呼び出しロジック
-   * @param {string} method
-   */
-	$.fn.money = function (method)
-	{
+/**
+  * Method の呼び出しロジック
+  * @param {string} method
+  */
+  $.fn.money = function (method)
+  {
     if ( methods[method] ) {
       return methods[ method ].apply( this, Array.prototype.slice.call( arguments, 1 ));
     } else if ( typeof method === 'object' || ! method ) {
@@ -85,5 +85,5 @@
     } else {
       $.error('Method ' +  method + ' does not exist on jQuery.money');
     }
-	};
+  };
 })(jQuery);
