@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8" />
+  <title>Document</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="js/jquery.money.js"></script>
+</head>
+<body>
+  <input type="text" class="money" />
+  <input type="text" class="money" value="1234" />
+
+  <script>
+  $(document).ready(function(){
+    $('.money').money();
+  });
+  </script>
+</body>
+</html>
